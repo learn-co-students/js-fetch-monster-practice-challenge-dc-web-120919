@@ -6005,6 +6005,24 @@
       "age": 13,
       "description": "131313",
       "id": 1001
+    },
+    {
+      "name": "Mickey Mouse",
+      "age": 100,
+      "description": "Eldritch horror",
+      "id": 1002
+    },
+    {
+      "name": "Goofy",
+      "age": 150,
+      "description": "Dog fiend",
+      "id": 1003
+    },
+    {
+      "name": "Duckman",
+      "age": null,
+      "description": "Duck anti-friend",
+      "id": 1004
     }
   ]
 }
