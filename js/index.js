@@ -1,5 +1,4 @@
 console.log("connected to js")
-let page = 1
 
 document.addEventListener("DOMContentLoaded", ()=> {
     renderAllMonsters()
