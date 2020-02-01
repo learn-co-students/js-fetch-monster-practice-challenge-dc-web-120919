@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     renderMonsters()
     forwardButton().addEventListener('click', forwardButtonHandler)
     backButton().addEventListener('click', backButtonHandler)
-    
+    getForm().addEventListener('submit', submitNewMonster)
 })
 
 function renderMonsters(){
@@ -36,6 +36,12 @@ function buildMonsterCards(monster) {
 
     monsterContainer.appendChild(monsterCard)
     
+    monsterCard.dataset.id = monster.id
+    monsterCard.addEventListener("click", deleteMonster)
+}
+
+function getForm(){
+    return document.getElementById("monster-form")
 }
 
 function backButton(){
@@ -57,15 +63,6 @@ function forwardButtonHandler(e){
 
 }
 
-function forwardButtonHandler(e){
-    console.log("I'm clicked!")
-    fetch("http://localhost:3000/monsters/?_limit=50&_page=3")
-    .then(response => response.json()) 
-    .then(monsterArray => { 
-        monsterArray.forEach(mons => buildMonsterCards(mons) )
-    })
-
-}
 
 function backButtonHandler(e){
     location.reload()
@@ -77,8 +74,33 @@ function backButtonHandler(e){
 
 }
 
+function submitNewMonster(event) {
+    event.preventDefault()
+    // console.log('Submit Button clicked!')
+    let newName = event.target.name.value
+    let newAge = event.target.age.value
+    let newDesc = event.target.description.value
 
+    let newMonster = {name: newName, age: newAge, description: newDesc}
+    fetch("http://localhost:3000/monsters/", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newMonster)
+        }).then(response => response.json())
+        .then(newMonster => buildMonsterCards(newMonster))
+    
+    
+}
 
+function deleteMonster(){
+    monsterId = event.currentTarget.dataset.id
+    fetch("http://localhost:3000/monsters/" + monsterId, {
+      method: 'DELETE',
+    }).then(response => response.json()).then(json => console.log(json))
+    event.currentTarget.remove()
+}
 
 
 
