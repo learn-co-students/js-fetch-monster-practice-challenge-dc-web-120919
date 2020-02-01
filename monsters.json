@@ -6023,6 +6023,12 @@
       "age": null,
       "description": "Duck anti-friend",
       "id": 1004
+    },
+    {
+      "name": "Mickey Mouse",
+      "age": 100,
+      "description": "Eldritch horror",
+      "id": 1005
     }
   ]
 }

@@ -15,9 +15,13 @@ document.addEventListener("DOMContentLoaded",(e) =>{
     backwardButton.addEventListener('click', (e) => pageTurner(e))
     let formSubmission = getFormSubmit();
     formSubmission.addEventListener('submit', (e) => formHandler(e));
+    let randButton = randomButton();
+    randButton.addEventListener('click', (e) => randomPage(e));
+
 })
 
 function fetchMonsters(page){
+    eraseMonsters();
     let monsters = fetch(`http://localhost:3000/monsters/?_limit=50&_page=${page}`)
     .then(result => result.json())
     .then(data => {
@@ -89,6 +93,18 @@ function eraseMonsters(){
         monsterContainer.removeChild(monsterContainer.firstChild);
     }
 
+}
+
+function randomPage(event){
+    event.preventDefault();
+    console.log(event);
+    let randPage = Math.floor((Math.random() * 20) + 1);
+    fetchMonsters(randPage)
+    alert(`You've turned to page ${randPage}!`);
+}
+
+function randomButton(){
+    return document.getElementById('random-button');
 }
 
 function getPageNumberDiv(){
