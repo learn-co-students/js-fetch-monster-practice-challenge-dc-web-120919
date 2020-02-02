@@ -11,7 +11,7 @@ function getForm(){
 
 }
 function newMosterHandler(event){
-    event.preventDefault()
+    event.target.reset()
     // console.log('you clicked me')
     let newName= event.target.name.value
     let newAge =event.target.age.value
