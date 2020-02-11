@@ -7,12 +7,6 @@
       "id": 1
     },
     {
-      "name": "Tartarus",
-      "age": 1874.4913565609456,
-      "description": "Cyclopean swarthy amorphous singular accursed furtive non-euclidean stygian. Swarthy gibbering charnel eldritch daemoniac gibbous. Cyclopean lurk hideous tentacles squamous immemorial tenebrous mortal. Madness tentacles furtive mortal foetid decadent. Foetid immemorial comprehension.",
-      "id": 2
-    },
-    {
       "name": "Hemera",
       "age": 4094.8375978925988,
       "description": "Dank immemorial abnormal gambrel. Cat lurk unutterable. Abnormal tenebrous ululate. Nameless swarthy manuscript eldritch indescribable accursed antediluvian decadent.",
@@ -29,18 +23,6 @@
       "age": 4838.903020812994,
       "description": "Mortal madness foetid. Foetid hideous antediluvian non-euclidean comprehension nameless lurk. Squamous shunned accursed amorphous.",
       "id": 5
-    },
-    {
-      "name": "Nemesis",
-      "age": 309.71166432846627,
-      "description": "Mortal accursed unnamable indescribable antiquarian dank antediluvian. Cat dank unmentionable foetid antediluvian furtive. Nameless loathsome stygian tentacles abnormal antediluvian. Antiquarian iridescence daemoniac immemorial fungus furtive effulgence. Noisome ululate fungus hideous.",
-      "id": 6
-    },
-    {
-      "name": "Phanes",
-      "age": 61.3504188391221,
-      "description": "Gibbering accursed comprehension manuscript furtive madness cyclopean. Cyclopean ululate effulgence singular dank noisome unnamable. Furtive mortal manuscript indescribable foetid singular charnel stygian.",
-      "id": 7
     },
     {
       "name": "Nesoi",
@@ -293,12 +275,6 @@
       "age": 1803.0371379961537,
       "description": "Comprehension iridescence spectral non-euclidean accursed stench daemoniac blasphemous. Daemoniac stygian cat cyclopean antiquarian decadent comprehension ululate. Spectral noisome swarthy blasphemous. Daemoniac accursed ululate spectral mortal non-euclidean.",
       "id": 49
-    },
-    {
-      "name": "Pontus",
-      "age": 2064.006256002994,
-      "description": "Decadent lurk nameless eldritch charnel mortal. Dank hideous unnamable non-euclidean nameless fainted loathsome. Iridescence fungus daemoniac charnel manuscript spectral unutterable.",
-      "id": 50
     },
     {
       "name": "Uranus",
@@ -6005,6 +5981,18 @@
       "age": 13,
       "description": "131313",
       "id": 1001
+    },
+    {
+      "name": "3 Headed Beast",
+      "age": 2324,
+      "description": "Terrifying Monster",
+      "id": 1002
+    },
+    {
+      "name": "Monster3",
+      "age": "40",
+      "description": "Super Scary! ",
+      "id": 1003
     }
   ]
 }
